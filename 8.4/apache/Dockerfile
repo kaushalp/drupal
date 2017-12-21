@@ -59,10 +59,8 @@ COPY sshd_config /etc/ssh/
 EXPOSE 2222 80
 
 
-```docker
 COPY init_container.sh /bin/
-...
+
 RUN chmod 755 /bin/init_container.sh
-...
+
 CMD ["/bin/init_container.sh"]
-```
