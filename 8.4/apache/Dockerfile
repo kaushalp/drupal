@@ -58,8 +58,6 @@ COPY sshd_config /etc/ssh/
 
 EXPOSE 2222 80
 
-#!/bin/bash
-service ssh start
 
 ```docker
 COPY init_container.sh /bin/
