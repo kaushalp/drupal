@@ -62,8 +62,6 @@ ENV PORT 8080
 
 ENV PATH ${PATH}:/home/site/wwwroot
 
-WORKDIR /var/www/html
-
 COPY init_container.sh /bin/
 
 RUN chmod 755 /bin/init_container.sh
