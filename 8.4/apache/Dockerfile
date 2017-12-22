@@ -58,6 +58,11 @@ COPY sshd_config /etc/ssh/
 
 EXPOSE 2222 8080
 
+ENV PORT 8080
+
+ENV PATH ${PATH}:/home/site/wwwroot
+
+WORKDIR /var/www/html
 
 COPY init_container.sh /bin/
 
