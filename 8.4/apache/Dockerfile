@@ -64,6 +64,4 @@ ENV PATH ${PATH}:/home/site/wwwroot
 
 COPY init_container.sh /bin/
 
-RUN chmod 755 /bin/init_container.sh
-
 CMD ["/bin/init_container.sh"]
